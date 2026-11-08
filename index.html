@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIBUU - Hotel Reservation Platform</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <div class="login-box">
+            <div class="login-header">
+                <img src="assets/images/download.png" alt="SIBUU Hotel Logo" class="login-logo">
+                <h1>SIBUU</h1>
+                <p>HOTEL RESERVATION PLATFORM</p>
+            </div>
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="username">
+                        <i class="fas fa-user"></i> Username
+                    </label>
+                    <input type="text" id="username" name="username" required placeholder="Enter username">
+                </div>
+                <div class="form-group">
+                    <label for="password">
+                        <i class="fas fa-lock"></i> Password
+                    </label>
+                    <input type="password" id="password" name="password" required placeholder="Enter password">
+                </div>
+                <div class="form-group">
+                    <label for="role">
+                        <i class="fas fa-user-tag"></i> Role
+                    </label>
+                    <select id="role" name="role" required>
+                        <option value="">Select Role</option>
+                        <option value="Administrator">Administrator</option>
+                        <option value="Receptionist">Receptionist</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </button>
+                <div id="loginError" class="error-message" style="display: none;"></div>
+            </form>
+            <div class="login-footer">
+                <p style="text-align: center; font-size: 0.9rem; color: #6c757d;">
+                    <strong>Debela Kebede</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/storage.js"></script>
+    <script src="assets/js/validation.js"></script>
+    <script src="assets/js/auth.js"></script>
+</body>
+</html>
